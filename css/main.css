@@ -1,3 +1,53 @@
+.fondo{
+	background-image: url(../image/large.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	padding-top: 10%;
+}
+.logo{
+	width: 80%;
+}
+.azul{
+	background-color: #58ACFA;
+}
+.textazul{
+	color: #58ACFA;
+}
+.opacidad{
+	opacity: 0.5;
+}
+.icono{
+	font-size: 3em;
+}
+.bordeicono{
+	border-radius: 100%;
+	width: 50%;
+	height: 1000%;
+	box-shadow: -1px 2px 5px #999;
+}
+.bco{
+	color: white;
+}
 .mg-t{
 	margin-top: 5%;
+}
+.mg-b{
+	margin-bottom: 5%;
+}
+.pd-t{
+	padding-top: 5%;
+}
+.pd-b{
+	padding-bottom: 5%;
+}
+.mg{
+	margin:5%;
+}
+.pd{
+	padding: 5%;
+}
+.boton{
+	padding: 2%;
+	border: solid white 2px; 
+	border-radius: 5px;
 }
