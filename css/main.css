@@ -77,7 +77,7 @@ body{
 	width: 100%;
 	border-top: 5px solid #58ACFA;
 }
-span{
+span{/*obligatorio*/
 	color: red;
 }
 /*UTILES*/
@@ -108,16 +108,15 @@ span{
 .textazul{
 	color: #58ACFA;
 }
+a{
+	text-decoration: none;
+}
 /*MEDIA*/
 @media screen and (max-width: 600px) {
-	header .navegador{
-		background-color: white;
+	body .navegador{
+		background-color: #5858FA;
 	}
-	header a.text-white, div.navbar-default{
-		color: #F79F81;
-	}
-	.col-xs-12 #headertexto{
-		width: 100%;
-		height: auto;
+	body .navegador span.icon-bar, body ul>li{
+		color: white;
 	}
 }
