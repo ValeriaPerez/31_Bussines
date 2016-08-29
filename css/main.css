@@ -29,13 +29,12 @@ body{
 	background-image: url(../image/sec-2.jpg);
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
-	padding-bottom:50%;
+	background:fixed;
 }
 .fondo3{/*FONDO ultimo*/
 	background-image: url(../image/banner.jpg);
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
-	padding-bottom:40%;
 }
 .black{/*BACKGROUND NEGRO*/
 	background-color: black;
@@ -81,7 +80,7 @@ span{/*obligatorio*/
 	color: red;
 }
 /*UTILES*/
-.bco{
+.bco, li a{
 	color: white;
 }
 .mg-t{
@@ -111,12 +110,15 @@ span{/*obligatorio*/
 a{
 	text-decoration: none;
 }
+nav{
+	opacity:
+}
 /*MEDIA*/
 @media screen and (max-width: 600px) {
 	body .navegador{
 		background-color: #5858FA;
 	}
-	body .navegador span.icon-bar, body ul>li{
+    nav .icon-bar{
 		color: white;
-	}
+	}/*NO ME QUEDO DEBES ARREGLARLO*/
 }
