@@ -2,19 +2,27 @@
 <html lang="en">
 	<head>
 	  	<meta charset="utf-8">
+	  	<meta name="viewport" content="width=device-width, initial-scale=1">
 	  	<title>User Testing 360°</title>
-	  	<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/main.css">
+	  	<link rel="shortcut icon" href="favicon.ico">
+	  	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+  		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	  	<link rel="stylesheet" href="js/bootstrap.min.css">
+	  	<link rel="stylesheet" href="js/jquery.js">
+	  	<link rel="stylesheet" href="js/jquery.easing.min.js">
+		<link rel="stylesheet" href="js/main.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/icomoon.css">
 		<link rel="stylesheet" href="css/animate.css">
-		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<link rel="stylesheet" href="css/queries.css">
+		<link rel="stylesheet" href="css/main.css">
+		
 	</head>
 	<body>
 		<div class="container"><!--NAVEGADOR-->
 			<div class="row mg-t">
-				<nav class="navbar-default navbar-fixed-top">
+				<nav class="navbar navbar-fixed-top navbar-inverse">
 					<div class="container">
 						<div class="navbar-header">
 							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#Navegador">
@@ -32,7 +40,7 @@
 									<li><a href="#Ofrece">¿Que me ofrece?</a></li>
 									<li><a href="#Funciona">¿como funciona?</a></li>
 									<li><a href="#Usarlo">¿por que usarlo?</a></li>
-									<li><a href="#Contactanos">Contactanos</a></li>
+									<li><a href="contact.html">Contactanos</a></li>
 								</ul>
 							</div>
 						</div>
@@ -41,93 +49,114 @@
 				<header class="fondo"><!--HEADER-->
 					<div class="row">
 						<div class="col-lg-12 col-xs-12"><!--LETRAS CENTRADAS BLANCAS-->
-							<h1 class="bco pd mg text-center">Obten videos de personas reales ultilizando tu sition Wen, en 1 Hora</h1>
+							<h1 class="animated bounceInUp big pd mg bco text-center">Obten videos de personas reales<br> ultilizando tu sition Wen, en 1 Hora</h1>
 						</div>
 					</div>
 				<section class="azul"><!--PEDACITO AZUL-->
 					<div class="row">
-						<div class="col-lg-6 div-xs-6 bco">
+						<div class="col-md-6 div-xs-6 pd-t bco text-center">
 							<h2>PRUEBA GRATUITA</h2>
 							<p>Obten un video gratis en 5 minutos</p>
 						</div>
-						<div class="col-lg-6 div-xs-6">
-							<button class="boton azul bco">Pruebalo gratis</button>
+						<div class="col-nd-6 div-xs-6 pd-b text-center">
+							<button type="button" class="btn btn-info btn-lg boton azul bco" data-toggle="modal" data-target="#myModal"">Pruebalo gratis</button>
+							<div id="myModal" class="modal fade" role="dialog">
+  								<div class="modal-dialog">
+    							<!-- Modal content-->
+    								<div class="modal-content">
+      									<div class="modal-header">
+        									<button type="button" class="close" data-dismiss="modal">&times;</button>
+        									<h4 class="modal-title textazul">MIRA EL VIDEO</h4>
+      									</div>
+      									<div class="modal-body">
+        									<p><iframe width="100%" height="315" src="https://www.youtube.com/embed/u7MDfG9ZJTU" frameborder="0" allowfullscreen></iframe></p>
+     									</div>
+      									<div class="modal-footer">
+        									<button type="button" class="btn btn-default azul bco" data-dismiss="modal">Close</button>
+      									</div>
+   									</div>
+  								</div>
+							</div>
 						</div>
 					</div>
 				</section>
 				</header>
 				<section><!--NUESTROS SERVICIOS-->
 					<div class="row">
-						<a name="Ofrece"></a><!--PRIMER ANCLAJE-->`
+						<a name="Ofrece">
+							<!--PRIMER ANCLAJE-->
+						</a>
 						<div class="col-lg-12 col-xs-12 text-center textazul pd">
-							<h2>Nuestros servicios</h2>
+							<h2 class="icono">Nuestros servicios</h2>
 						</div>
 					</div>
 					<div class="row text-center"><!--ICONOS-->
 						<div class="col-lg-4 col-xs-12 pd">
-							<div class="bordeicono center-block pd">
-								<div class="icon-video icono textazul pd"></div>
+							<div class="bordeicono center-block pd animated bounceInLeft">
+								<a href="#"><div class="icon-video icono textazul pd move"></div></a>
 							</div>
 							<h4>Pruebalo gratis</h4>
 							<p>Obten un primer video screencast de un usuario navegador tu pagina.</p>
 						</div>
 						<div class="col-lg-4 col-xs-12 pd">
-							<div class="bordeicono center-block pd">
-								<div class="icon-clock icono textazul pd"></div>
+							<div class="bordeicono center-block pd animated bounceInLeft">
+								<a href="#"><div class="icon-clock icono textazul pd move"></div></a>
 							</div>	
 							<h4>Compra el servicio completo</h4>
 							<p>Si te gusto, compra nuestro servicio completo que incluye 7 videos y feedback.</p>
 						</div>
 						<div class="col-lg-4 col-xs-12 pd">
-							<div class="bordeicono center-block pd">
-								<div class="icon-profile-male icono textazul pd"></div>
+							<div class="bordeicono center-block pd animated bounceInLeft">
+								<a href="#"><div class="icon-profile-male icono textazul pd move"></div></a>
 							</div>		
 							<h4>Obten el resultado en 1 dia</h4>
 							<p>Te haremos llegar los video y el feedback completo el mismo dia.</p>
 						</div>
 					</div>
 					<div class="col-lg-12 col-xs-12 text-center">
-						<a href="#Fun"><img src="image/separador.png" alt="Separador"></a><!--1 SEPARADOR-->
+						<a href="#Fun"><img src="image/separador.png" alt="Separador"></a><!--1 SEPARADOR CON ANCLAJE-->
 					</div>
 				</section>
 				<section><!--LO QUIERO QUE HAGO?-->
 					<div class="row">
-						<a name="Funciona"></a>
-						<div class="col-lg-6 col-xs-12 pd-t pd-b">
-							<h2 class="textazul">Ejemplo de <img src="image/logo-2.jpg" alt="Logo" class="img-responsive logo"></h2>
+						<a name="Funciona">
+							<!--SEGUNDO ANCLAJE-->
+						</a>
+						<div class="col-lg-6 col-xs-6 pd-t pd-b">
+							<h2 class="textazul">Ejemplo de<img src="image/logo-2.jpg" alt="Logo" class="logo"></h2>
 							<p>en este video te damos un ejemplo de un integrante de nuestro panel evaluando la experiencia de  usa de</p>
 							<a target="_black" href="http://mimediamanzana.com/">
 								<p>mimediamanzana.com</p>
-							</a><a name="Fun"><!--ANCLAJE DE SEPARADOR-->
+							</a><a name="Fun"></a><!-- PRIMER ANCLAJE DE SEPARADOR-->
 							<p>El uso de User Testing 360 es identificar situacion confusas de los usuarios en su web y describir soluciones que garanticen una experiencia de uso satisfactoria.</p>
 							<img src="image/flecha.png" alt="Flecha" class="center-block">
 						</div>
-						<div class="col-lg-6 col-xs-12 pd-t pd-b">
+						<div class="col-lg-6 col-xs-6 pd-t pd-b">
 							<iframe width="100%" height="315" src="https://www.youtube.com/embed/u7MDfG9ZJTU" frameborder="0" allowfullscreen></iframe>
 						</div>
 					</div>
 				</section>
 				<section>
 					<div class="row">
-						<a name="Usarlo">
-						<div class="col-lg-6 col-xs-12">
-							<img src="image/large.jpg" alt="Foto2" class="img-responsive">
+						<a name="Usarlo"></a>
+						<div class="col-lg-6 col-xs-6 fondo2">
+						 <!--BACKGROUND-->
 						</div>
-						<div class="col-lg-6 col-xs-12">
+						<div class="col-lg-6 col-xs-6">
 							<h3>Lo quiero ¿Que hago?</h3>
 							<p class="textazul">Paso 1: Envianos tu link</p>
-								<div class="icon-pencil"></div>
+								<div class="icon-pencil iconoazul bco move"></div>
 							<p>Al darle click al boton de prueba. Coloca tu nombre y correo electronico a donde enviaremos el video y el informe con el feedback.</p>
 							<p class="textazul">Paso 2: Describe a tu publico objetivo</p>
 							<p>Describe las acciones que quieres que evaluemospor ejemplo:</p>
-								<div class="icon-tools"></div>
+								<div class="icon-tools iconoazul bco move"></div>
 							<ul>
 								<li>A primera vista de ¿Que crees que trate la pagina?</li>
 								<li>busca el coton de inscribirte o comprar	</li>
 								<li>¿Es facil o dificil leer los textos?</li>
 							</ul>
 							<p>Pueden ser preguntas como las que te mostramos.</p>
-								<div class="icon-envelope"></div>
+								<div class="icon-envelope iconoazul bco move"></div>
 							<p class="textazul">Paso 3: Recibe un video y el feedback completo</p>
 							<p>Recibe un combo de 7 videos y un informe detallado con las capacitaciones de usabilidad de tu producto.</p>
 						</div>
@@ -138,11 +167,11 @@
 				</section>
 				<section>
 					<div class="row">
-						<a name="Usarlo">
-						<div class="col-lg-6 col-xs-12">
-							<h2>Por que usar<img src="image/logo-2.jpg" alt="Logo" class="img-responsive"></h2>
-							<p>En la era en la que nos encontramo, la web se ha convertido en el mejor sitio para llegar a millones de personas en segundos, pero ¿que pasa si el producto digital que ofreces no es bueno o no se entiende? Pierdes esta enorme oportunidad. Con <a href="#">User Testing 360</a>, puedes entender la experiencia de uso de tu pagina o producto digital y mejorarla para que satisfaga todas las necesidades de tus usuarios. con <a href="#">User Testing 360</a> podras entender:</p>
-							<a name="Usa">
+						<a name="Usarlo"></a>
+						<div class="col-lg-6 col-xs-6">
+							<h2>Por que usar<img src="image/logo-2.jpg" alt="Logo" class="logo"></h2>
+							<p>En la era en la que nos encontramos, la web se ha convertido en el mejor sitio para llegar a millones de personas en segundos, pero ¿que pasa si el producto digital que ofreces no es bueno o no se entiende? Pierdes esta enorme oportunidad. Con <a href="#">User Testing 360</a>, puedes entender la experiencia de uso de tu pagina o producto digital y mejorarla para que satisfaga todas las necesidades de tus usuarios. con <a href="#">User Testing 360</a> podras entender:</p>
+							<a name="Usa"></a>
 							<ul>
 								<li>¿Como tu publico objetico verdaderamente usa tu producto?</li>
 								<li>¿Que se hace facil o dificil al navegar en tu producto?</li>
@@ -150,49 +179,59 @@
 								<p><a href="#">"User Testing 360"</a></p> teayudara a responder estas preguntas y muchas mas. Es el toque final perfecto para tu pagina o producto digital.
 							</ul>
 						</div>
-						<div class="col-lg-6 col-xs-12">
-						<!--Aqui va un background-->
-							<img src="image/logo-2.jpg" alt="Logo" class="img-responsive">
+						<div class="col-lg-6 col-xs-6 ">
+							<img src="image/banner.jpg" alt="Foto3" class="img-responsive">
 						</div>
 					</div>
 				</section>
 				<section>
-					<div class="row">
-						<div class="col-lg-6 col-xs-6">
+					<div class="row azul">
+						<div class="col-lg-6 col-xs-6 pd-b bco text-center">
 							<h2>PRUEBA GRATUITA</h2>
 							<p>Obten un video gratis en 5 minutos</p>
 						</div>
-						<div class="col-lg-6 col-xs-6">
-							<button>Pruebalo gratis</button>
+						<div class="col-lg-6 col-xs-6 pd-b bco text-center">
+							<button type="button" class="btn btn-info btn-lg boton azul bco" data-toggle="modal" data-target="#myModal"">Pruebalo gratis</button>
+							<div id="myModal" class="modal fade" role="dialog">
+  								<div class="modal-dialog">
+    							<!-- Modal content-->
+    								<div class="modal-content">
+      									<div class="modal-header">
+        									<button type="button" class="close" data-dismiss="modal">&times;</button>
+        									<h4 class="modal-title textazul">MIRA EL VIDEO</h4>
+      									</div>
+      									<div class="modal-body">
+        									<p><iframe width="100%" height="315" src="https://www.youtube.com/embed/u7MDfG9ZJTU" frameborder="0" allowfullscreen></iframe></p>
+     									</div>
+      									<div class="modal-footer">
+        									<button type="button" class="btn btn-default azul bco" data-dismiss="modal">Close</button>
+      									</div>
+   									</div>
+  								</div>
+							</div>
 						</div>
 					</div>
 				</section>
 				<footer>
-					<div class="row">
-						<a name="Contactanos">
-						<div class="col-lg-6 col-xs-12">
-							<p>Escribenos a:</p>
+					<div class="row black">
+						<a name="Contactanos"></a>
+						<div class="col-lg-6 col-xs-12 pd-t">
+							<p class="bco">Escribenos a:</p>
 							<p><a href="#">experienciadelusuario@gmail.com</a></p>
-							<p>telefono: 989637925</p>
+							<p class="bco">telefono: 989637925</p>
 						</div>
-						<div class="col-lg-6 col-xs-12">
-							<div class="row">
-								<div class="col-lg-6">
-									<div class="icon-facebook"></div>
-								</div>
-								<div class="col-lg-6">
-									<div class="icon-twitter"></div>
-								</div>
-								<div class="col-lg-12">
-									<p>Copyright C 2015 - User Testing 360</p>
-								</div>
-							</div>
+						<div class="col-lg-6 col-xs-12 pd-t text-right">
+							<ul class="list-inline">								
+								<li><a target="_blanck" href="http://www.facebook.com/" class="icon-facebook full-right social"></a></li>
+								<li><a target="_blanck" href="http://twitter.com/?lang=es/" class="icon-twitter full-right social"></a></li>
+							</ul>
+								<p class="bco">Copyright C 2015 - User Testing 360</p>
 						</div>
 					</div>
 				</footer>
 		</div><!--SE CIERRA MI CONTAINER-->
 	<!--PARA QUE FUNCIONE BOOTSTRAP-->
-	<script src="js/jquery-1.11.3.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    </body>
+		<!-- <script src="js/jquery-1.11.3.min.js"></script>
+		   	    <script src="js/bootstrap.min.js"></script>
+		     -->   </body>
 </html>	
